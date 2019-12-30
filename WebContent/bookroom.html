@@ -1,0 +1,83 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Book Room</title>
+<link rel="stylesheet" href="Style.css" type="text/css" />
+</head>
+<body>
+
+
+<header>
+ 
+   
+  <img src="logo22.png" alt="logo" style="float:left" height="180" width="180">
+        
+            <h1 align="center">Amiral Hotel</h1>
+          
+         
+       
+    </header>
+ 
+   
+    <nav>
+            
+    <ul>
+                <li><a href="hotelhome.html">Home </a></li>
+                <li> <a href="Addroom.html">Add Room </a></li>
+				 <li><a href="bookroom.html">Book Room  </a></li>
+				 <li><a href="manageroom.html">Manage Room Booking </a></li>
+				 <li><a href="viewroom.html">View Room Availability</a></li>
+</ul>
+				
+				
+        
+      
+   </nav>
+
+
+
+
+ <h2 align="center"><b>Book Room</b></h2>
+ <center>
+ <form action="manageroom.html" method="post" style="align:center;" onsubmit="alert('Booked Sucessfully')";>
+<table align="center" cellpadding="10" cellspacing="2" >
+<tr><th>Room Type*:</th><td><select name="type2">
+    <option value="ac" >AC suite</option>
+    <option value="nac" >NON-AC suite</option>
+    <option value="suite" >Presidential suite</option>
+    <option value="delux" >AC Deluxe</option></td>
+  </select></tr>
+<tr><th>Offer description
+:</th><td><input type="text" name="text" id="offer" class="input"  size="50" pattern="[A-Za-z]+" title ="Enter offer description"></td></tr>
+<tr><th>Discount*:</th><td><input type="number" min="0" name="discount" max="100" maxlength="3" size="50"  class="input" pattern="[0-9]+" required></td></tr>
+<tr><th><b>Location*: </b>:</th><br>
+   <td> <select name="loc" required>
+    <option value="Bangalore" >Bangalore</option>
+    <option value="Chennai" >Chennai</option>
+    <option value="Mumbai" >Mumbai</option>
+    <option value="Vizag" >Vizag</option>
+  </select></td></tr>
+    <tr ><th></th ><th><button type="submit" class="button" ><b>Submit</b></button></th></tr>
+ 
+ 
+ <tr>
+
+  <td colspan=2>
+
+  <b>All * marked fields are mandatory!</b>
+
+  </td>
+
+  </tr>
+
+ </table>
+ 
+ </center>
+ 
+</form>
+
+
+</body>
+</html>
